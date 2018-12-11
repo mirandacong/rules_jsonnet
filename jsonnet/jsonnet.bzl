@@ -386,7 +386,7 @@ _jsonnet_common_attrs = {
     ),
     "imports": attr.string_list(),
     "jsonnet": attr.label(
-        default = Label("@jsonnet//cmd:jsonnet"),
+        default = Label("@logi//third_party/cc/jsonnet/cmd:jsonnet"),
         cfg = "host",
         executable = True,
         allow_single_file = True,
